@@ -1,0 +1,102 @@
+% Resume with a degree credit mosaic
+% Build: latexmk resume.tex   (LuaLaTeX; see .latexmkrc)
+% The mosaic's courses and layout live in courses.lua.
+% MIT licensed. A favor, not a condition: please don't use it to apply for
+% engineering internships in the Philadelphia area for now; I'm still
+% competing for those.
+\documentclass[palette=walnut]{mosaicresume}
+
+\hypersetup{pdftitle={George Washington Plunkitt -- Resume},
+  pdfauthor={George Washington Plunkitt}}
+
+\begin{document}
+
+\nameblock{Driving and anger management student}
+  {George Washington Plunkitt}
+  {Seeking a Summer 2027 internship in traffic and temper management in Wrigleyville.}
+
+\mosaiclegend{One square is one credit; each outline is one course}
+\creditmosaic
+
+\begin{threecolumns}
+\rsection{Education}
+\entry{Bushey's Academy of Driving and Anger Management}
+\meta{Chicago, IL}
+B.S., Defensive Driving\par
+Expected Winter 2028\par
+GPA 3.70\enspace·\enspace Spring 2026 Road Scholar's List\par
+\vspace{3pt}
+{\sffamily\bfseries Relevant coursework}\enspace Zipper Merge, Parallel
+Parking, Counting to Ten, Serenity Now, Primal Scream, Honk Theory,
+Roundabouts, Breathing I \& II\par
+\sectiongap
+\rsection{Technical Skills}
+\skill{Vehicles}{Sedan, minivan, golf cart, riding mower, shopping cart (fully loaded), Zamboni (supervised)}
+\skill{Techniques}{Box breathing, counting to ten and back, three-point turn, ``I'' statements, the polite wave}
+\skill{Tools}{Turn signal, hazard lights, stress ball, ice scraper, journal, the horn (sparingly)}
+\sectiongap
+\rsection{Writing \& Public Policy}
+\entry{Founder \& Writer, \textit{Honest Graft}}
+\meta{\href{https://example.com}{honestgraft.example.com}\enspace·\enspace 2026--present}
+\begin{rbullets}
+  \item Write a newsletter on Chicago merging etiquette.
+  \item Investigated who really has the right of way at a four-way stop, using dashcam footage and a protractor.
+  \item Self-host the site under my desk.
+\end{rbullets}
+
+\nextcolumn
+\rsection{Projects}
+\entry{lennyresume}[{\LaTeX} resume template]
+\meta{\href{https://github.com/lennyitb/lennyresume}{github.com/lennyitb/lennyresume}}
+\begin{rbullets}
+  \item Wrote the Lua\LaTeX\ class this resume is set in. You are looking at it.
+  \item Drew the credit mosaic above from a course list and a hand-drawn text map, so the left turn incident sits where I put it.
+\end{rbullets}
+\gapafter
+\entry{Honk Translator}[Embedded project]
+\begin{rbullets}
+  \item Built a dashboard device that classifies car horns as friendly tap, warning, or fury, with 71\% accuracy.
+  \item Added a cooldown that locks out my own horn for ten seconds after any honk classified as fury.
+  \item Logged every honk on the commute to a chart that helps to track my progress and manage my feelings.
+\end{rbullets}
+\gapafter
+\entry{Turn Signal Reminder}[Intro to Projects]
+\begin{rbullets}
+  \item Captured the schematic and laid out a PCB in KiCad for a chime that sounds when you change lanes without signaling.
+  \item Populated and tested PCB.
+  \item Escalated the chime to a recording of my mother after the third offense.
+  \item Designed + 3D printed enclosure, mounted it under the dash, wired, and tested on the Kennedy Expressway.
+\end{rbullets}
+\gapafter
+\entry{Serenity Now Button}[Anger Management II]
+\begin{rbullets}
+  \item Counted to ten in VHDL on an FPGA: the LEDs count down before you are allowed to reply to the email.
+\end{rbullets}
+
+\nextcolumn
+\rsection{Experience}
+\entry{Crossing Guard}[Level 1 Lollipop]
+\meta{Lincoln Park, Chicago, IL\enspace·\\ 3 school years, 2022--2025}
+\begin{rbullets}
+  \item Guided kids age 5--12 across a four-lane road; lost none of them.
+  \item Managed diverse traffic and behavioral needs, practiced safe intersection management through rain, sleet, and Cubs home games.
+  \item Stayed calm when it was \qty{-20}{\degree} outside and a minivan rolled the stop sign.
+  \item Walked parents through the drop-off loop in the right jargon, which often made their 25-minute wait feel like time well spent.
+\end{rbullets}
+\gapafter
+\entry{Drive-Thru Headset Operator}
+\meta{Big Beef Drive-In,\\Route 66\enspace·\enspace3 summers, 2023--present}
+\begin{rbullets}
+  \item Took orders through a speaker that only plays static, and repeated them back calmly.
+  \item De-escalated 40+ incidents involving a missing ketchup packet.
+  \item Ate a lot of fries with friends in the walk-in freezer.
+\end{rbullets}
+\end{threecolumns}
+
+\contactfooter
+  {800-588-2300\enspace·\enspace\href{mailto:plunkitt@example.com}{plunkitt@example.com}\par
+   \muted{1060 W Addison St, Chicago, IL 60613}}
+  {\href{https://github.com/lennyitb}{github.com/lennyitb}\par
+   \href{https://example.com}{honestgraft.example.com}}
+
+\end{document}

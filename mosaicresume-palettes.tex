@@ -1,0 +1,72 @@
+% mosaicresume-palettes.tex -- color palettes for mosaicresume.cls
+%
+% Pick one with \documentclass[palette=forest]{mosaicresume}, or in the
+% preamble with \usepalette{forest}. Override single colors on top of a
+% palette with \usepalette{forest, highlight=1C5CAB}, or make your own:
+%   \definepalette{mine}{harbor, bar=12355B, gradeAp=12355B}
+% Every value is an HTML hex color without the #.
+%
+% The keys:
+%   bar        the bar down the left edge and the section headings
+%   band       the band behind section headings
+%   accent     bullet dashes
+%   muted      subtitles, places and dates, the address
+%   rule       the rule above the contact footer, chart ticks
+%   highlight  a contrasting color for an honor under a term (honor = true)
+%   pending    \fillin{...} placeholders
+%   gradeAp gradeA gradeB gradeC   squares for A+, A/A-, B+/B/B-, C and below;
+%              also the term bars
+%   gradeRem   squares for credits still to come
+%   pieceAp pieceA pieceB pieceC   the tint inside a course outline
+%   strokeBC   the outline of B and C courses (A courses use their square color)
+%   chartText  small chart text
+
+% The original: walnut brown on cream.
+\definepalette{walnut}{
+  bar = 5B3A22, band = F3EDE1, accent = 9E8256, muted = 5C5347,
+  rule = C8B796, highlight = 1C5CAB, pending = A0522D,
+  gradeAp = 5B3A22, gradeA = 7A5236, gradeB = BFA77E, gradeC = EDE4D2,
+  gradeRem = EEF0F2,
+  pieceAp = EFE7DA, pieceA = F1EADF, pieceB = F5F0E6, pieceC = F9F6F0,
+  strokeBC = B9AF9E, chartText = 52514E,
+}
+
+% Navy and slate blue, with a rust highlight.
+\definepalette{harbor}{
+  bar = 1F3A5F, band = E7EDF4, accent = 5E7FA3, muted = 4F5866,
+  rule = AABBD0, highlight = B4532A, pending = A0522D,
+  gradeAp = 1F3A5F, gradeA = 3B5F88, gradeB = 9FB5CE, gradeC = DFE7F0,
+  gradeRem = F1F0EC,
+  pieceAp = E3EAF2, pieceA = E8EEF5, pieceB = EFF3F8, pieceC = F6F8FB,
+  strokeBC = A7B4C3, chartText = 4E525A,
+}
+
+% Deep green and sage, with a rust highlight.
+\definepalette{forest}{
+  bar = 2F4A35, band = EAF0E7, accent = 6D8A63, muted = 4F574C,
+  rule = B4C4A9, highlight = A3501F, pending = A0522D,
+  gradeAp = 2F4A35, gradeA = 4D6B50, gradeB = AABD9E, gradeC = E2EADD,
+  gradeRem = F0EFF1,
+  pieceAp = E5ECE3, pieceA = EAF0E8, pieceB = F0F4EE, pieceC = F7F9F6,
+  strokeBC = AAB5A4, chartText = 4F524E,
+}
+
+% Aubergine and mauve, with a teal highlight.
+\definepalette{plum}{
+  bar = 4A2546, band = F3EAF1, accent = 8E6287, muted = 5A4D58,
+  rule = C7AFC1, highlight = 1F6F68, pending = A0522D,
+  gradeAp = 4A2546, gradeA = 6E3F68, gradeB = BC9FB6, gradeC = ECE1E9,
+  gradeRem = EFF0EE,
+  pieceAp = EEE4EC, pieceA = F1E8EF, pieceB = F5EFF3, pieceC = F9F5F8,
+  strokeBC = B8A9B4, chartText = 524E51,
+}
+
+% Charcoal grays, with an orange highlight.
+\definepalette{graphite}{
+  bar = 2B2D31, band = EDEEF0, accent = 7A7F87, muted = 55585D,
+  rule = BEC2C8, highlight = C2410C, pending = C2410C,
+  gradeAp = 2B2D31, gradeA = 51555C, gradeB = A6ABB2, gradeC = D9DCE0,
+  gradeRem = F4F3EF,
+  pieceAp = E8E9EB, pieceA = ECEDEF, pieceB = F1F2F3, pieceC = F7F7F8,
+  strokeBC = ADB1B7, chartText = 4E5054,
+}
