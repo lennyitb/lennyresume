@@ -2,8 +2,8 @@
 
 A one-page LaTeX resume for students, built around a chart of your degree: one
 square per credit, each course an outlined shape of its credits, shaded by
-grade, with a bar underneath splitting the same credits by term. Recruiters
-see at a glance how far along you are and how you've done.
+grade, with a bar underneath splitting the same credits by term. The goal is to grab the recruiter's attention for a few seconds with a puzzle that looks more complicated than it is. When they decode its meaning it has the effect of subliminally glazing their intelligence.
+For the time being you need LaTeX to build it but AI can help a lot. If there's any demand I can build a web app that helps put it together without having to edit any code.
 
 ![The resume in the walnut palette](docs/preview.png)
 
