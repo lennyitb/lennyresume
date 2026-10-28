@@ -6,6 +6,6 @@ tmp=$(mktemp -d)
 for p in walnut harbor forest plum graphite; do
   lualatex -interaction=batchmode -output-directory="$tmp" -jobname="$p" \
     "\AddToHook{begindocument/before}{\usepalette{$p}}\input{resume}" >/dev/null
-  pdftoppm -r 72 -png -singlefile "$tmp/$p.pdf" "docs/$p"
+  pdftoppm -r 200 -png -singlefile "$tmp/$p.pdf" "docs/$p"
 done
 rm -rf "$tmp"
