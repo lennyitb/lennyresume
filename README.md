@@ -5,7 +5,7 @@ square per credit, each course an outlined shape of its credits, shaded by
 grade, with a bar underneath splitting the same credits by term. Recruiters
 see at a glance how far along you are and how you've done.
 
-![The resume in the walnut palette](docs/walnut.png)
+![The resume in the walnut palette](docs/preview.png)
 
 Up close, the mosaic and the term bar:
 
