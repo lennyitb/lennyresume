@@ -7,6 +7,12 @@ see at a glance how far along you are and how you've done.
 
 ![The resume in the walnut palette](docs/walnut.png)
 
+Up close, the mosaic and the term bar:
+
+![The credit mosaic up close](docs/inset-mosaic.png)
+
+![The term bar up close](docs/inset-terms.png)
+
 ## Building it
 
 The class needs **LuaLaTeX** (the mosaic is drawn by a Lua script during the
